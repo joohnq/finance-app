@@ -1,4 +1,10 @@
 .painel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+
     max-width: 90%;
 
     margin: 0 auto;
@@ -12,7 +18,7 @@
 
     border-radius: 10px;
 
-    margin: -50px auto 70px;
+    margin: -50px 0 70px;
 
     display: flex;
     flex-direction: column;
@@ -22,8 +28,8 @@
 
 .painel__box > div{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .painel__box div h2{
