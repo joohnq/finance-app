@@ -1,0 +1,41 @@
+.painel{
+    max-width: 90%;
+
+    margin: 0 auto;
+}
+
+.painel__box{
+    width: 300px;
+    height: 150px;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    margin: -50px auto 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 50px;
+}
+
+.painel__box > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.painel__box div h2{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.painel__box p{
+    font-size: 2.3rem;
+
+    text-align: center;
+    font-weight: 700;
+
+    margin-top: 10px;
+}

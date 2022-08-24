@@ -1,7 +1,12 @@
 import React from "react";
+import { Painel } from "../../components/Painel";
+import './style.css'
 
 export function Home(){
     return (
-        <h1>Hello World</h1>
+        <div>
+            <h1>Controle Financeiro</h1>
+            <Painel />
+        </div>
     )
 }
