@@ -16,14 +16,14 @@
 
     background-color: #ffffff;
 
-    border-radius: 10px;
+    border-radius: 5px;
 
     margin: -50px 0 70px;
 
     display: flex;
     flex-direction: column;
 
-    padding: 10px 50px;
+    padding: 20px 50px;
 }
 
 .painel__box > div{
