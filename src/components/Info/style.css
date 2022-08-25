@@ -1,0 +1,53 @@
+.info {
+    padding:5px;
+
+    margin: 20px auto;
+
+    background-color: white;
+
+    width: 60%;
+
+    text-align: start;
+
+    position: relative;
+}
+
+.info th {
+    padding:5px;
+    text-align: start;   
+    margin-bottom: 100px;
+}
+
+.info td {
+    padding:5px;
+
+    margin-bottom: 5px;
+}
+
+.info td:nth-child(1) {
+    width: 60%;
+    word-wrap: break-word;
+}
+
+.info td:last-child {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+.info img{
+    width: 25px;
+}
+
+.underLine{
+    width: 99%;
+    height: 1px;
+
+    background-color: #c6c6c6;
+
+    position: absolute;
+}
+

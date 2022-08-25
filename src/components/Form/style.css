@@ -1,5 +1,5 @@
 form{
-    max-width: 70%;
+    max-width: 60%;
 
     margin: 0 auto;
 
@@ -9,7 +9,7 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
     flex-direction: row;
 
     border-radius: 5px;
