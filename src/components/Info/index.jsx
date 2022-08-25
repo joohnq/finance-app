@@ -26,7 +26,7 @@ export function Info(){
 		            <td>R$150,00</td>
 		            <td>
                         <img src="/icon-arrow-up-green.svg" alt="Icon Receita" /> 
-                        <img src="/trash.svg" alt="Lixeira" />
+                        <img src="/trash.svg" alt="Lixeira"/>
                     </td>
 	            </tr>
 	        </tbody>
