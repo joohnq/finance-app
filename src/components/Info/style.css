@@ -11,6 +11,8 @@
 
     position: relative;
 
+    border-radius: 5px;
+
     box-shadow: 1px 1px 30px 1px rgb(189, 189, 189);
 }
 
