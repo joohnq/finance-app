@@ -10,6 +10,8 @@
     text-align: start;
 
     position: relative;
+
+    box-shadow: 1px 1px 30px 1px rgb(189, 189, 189);
 }
 
 .info th {
@@ -52,5 +54,17 @@
     background-color: #c6c6c6;
 
     position: absolute;
+}
+
+@media (max-width: 800px) {
+    .info{
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .info{
+        width: 97%;
+    }
 }
 

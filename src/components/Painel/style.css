@@ -1,11 +1,11 @@
 .painel{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
     justify-content: center;
-    flex-direction: row;
+    background-color: transparent;
     gap: 20px;
 
-    max-width: 90%;
+    width: 90%;
 
     margin: 0 auto;
 }
@@ -24,6 +24,8 @@
     flex-direction: column;
 
     padding: 20px 50px;
+
+    box-shadow: 1px 1px 30px 1px rgb(189, 189, 189);
 }
 
 .painel__box > div{
@@ -44,4 +46,10 @@
     font-weight: 700;
 
     margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    .info{
+        width: 98%;
+    }
 }
