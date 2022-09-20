@@ -3,14 +3,14 @@ import './style.css'
 
 export function Info(){
     return (
-        <table class="info">
+        <table className="info">
 	        <thead>
 	            <tr>
 		            <th>Descrição</th>
 		            <th>Valor</th>
 		            <th>Tipo</th>
 	            </tr>
-                <div className="underLine"></div>
+				<tr className="underLine"></tr>
 	        </thead>
 	         <tbody>
 	            <tr>
@@ -21,15 +21,7 @@ export function Info(){
                         <img src="/trash.svg" alt="Lixeira" />
                     </td>
 	            </tr>
-                <tr>
-		            <td>Cartão Bolsa Presença</td>
-		            <td>R$150,00</td>
-		            <td>
-                        <img src="/icon-arrow-up-green.svg" alt="Icon Receita" /> 
-                        <img src="/trash.svg" alt="Lixeira"/>
-                    </td>
-	            </tr>
 	        </tbody>
-</table>
+	</table>
     )
 }
