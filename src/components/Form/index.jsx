@@ -1,5 +1,4 @@
 import React from "react";
-import { Info } from "../Info";
 import './style.css'
 
 export function Form(){
@@ -17,8 +16,6 @@ export function Form(){
         }else{
             optionRadio = 'exit'
         }
-
-        <Info description={description} value={value} optionRadio={optionRadio}/>
     }
 
     return(
