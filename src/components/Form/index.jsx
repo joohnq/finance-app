@@ -1,50 +1,83 @@
-import React from "react";
-import './style.css'
+import React, { useState } from "react";
+import { Info } from "../../components/Info";
+import "./style.css";
 
-export function Form(){
+export const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
+  const [desc, setDesc] = useState("");
+  const [amount, setAmount] = useState("");
+  const [isExpense, setExpense] = useState(false);
 
-    function addElement(e){
-        const form = e.target
-        const description = form.firstElementChild.children[1].value
-        const value = form.firstElementChild.children[3].value
-        let optionRadio = ''
-        e.preventDefault()
+  const generateID = () => Math.round(Math.random() * 1000);
 
-
-        if(form.children[1].children[1].checked){
-            optionRadio = 'entrie'
-        }else{
-            optionRadio = 'exit'
-        }
+  const handleSave = () => {
+    if (!desc || !amount) {
+      alert("Informe a descrição e o valor!");
+      return;
+    } else if (amount < 1) {
+      alert("O valor tem que ser positivo!");
+      return;
     }
 
-    return(
-        <form onSubmit={addElement} action="" method="GET">
-            <div className="input__text">
-                <label htmlFor="description">
-                    Descrição
-                </label>
-                <input type="text" id="description" name="description"/>
+    const transaction = {
+      id: generateID(),
+      desc: desc,
+      amount: amount,
+      expense: isExpense,
+    };
 
-                <label htmlFor="value">
-                    Valor
-                </label>
-                <input type="number" id="value" name="value"/>
-            </div>
+    handleAdd(transaction);
 
-            <div className="input__radio">
-                <label htmlFor="entrie">
-                    Entrada
-                </label>
-                <input type="radio" name="radio__option" id="entrie" value="entrie" />
-                
-                <label htmlFor="exit">
-                    Saída
-                </label>
-                <input type="radio" name="radio__option" id="exit" value="exit" />
-            </div>
+    setDesc("");
+    setAmount("");
+  };
 
-            <button type="submit">Adicionar</button>
-        </form>
-    )
-}
+  return (
+    <div>
+      <form action="" method="GET">
+        <div className="input__text">
+          <label htmlFor="description">Descrição</label>
+          <input
+            type="text"
+            value={desc}
+            id="description"
+            name="description"
+            onChange={(e) => setDesc(e.target.value)}
+          />
+
+          <label htmlFor="value">Valor</label>
+          <input
+            type="number"
+            id="value"
+            name="value"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+          />
+        </div>
+
+        <div className="input__radio">
+          <label htmlFor="entrie">Entrada</label>
+          <input
+            type="radio"
+            name="radio__option"
+            id="entrie"
+            defaultChecked
+            value="entrie"
+            onChange={() => setExpense(!isExpense)}
+          />
+
+          <label htmlFor="exit">Saída</label>
+          <input
+            type="radio"
+            name="radio__option"
+            id="exit"
+            value="exit"
+            onChange={() => setExpense(!isExpense)}
+          />
+        </div>
+
+        <button onClick={handleSave}>Adicionar</button>
+      </form>
+      <Info />
+    </div>
+  );
+};
