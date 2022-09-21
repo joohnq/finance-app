@@ -1,7 +1,14 @@
 import React from "react";
+import { InfoItem } from "../InfoItem";
 import './style.css'
 
-export function Info(){
+export function Info({ itens, setItens }){
+	function onDelete(ID){
+		const newArray = itens.filter((transaction) => transaction.id !== ID)
+		setItens(newArray)
+		localStorage.setItem("transactions", JSON.stringify(newArray))
+	}
+
     return (
         <table className="info">
 	        <thead>
@@ -13,14 +20,9 @@ export function Info(){
 				<tr className="underLine"></tr>
 	        </thead>
 	         <tbody>
-	            <tr>
-		            <td>Academia</td>
-		            <td>R$70,00</td>
-		            <td>
-                        <img src="/icon-arrow-down-red.svg" alt="Icon Despesa" /> 
-                        <img src="/trash.svg" alt="Lixeira" />
-                    </td>
-	            </tr>
+				{ 
+					itens?.map((item, index) => (<InfoItem key={index} item={item} onDelete={onDelete}/>))
+				}
 	        </tbody>
 	</table>
     )

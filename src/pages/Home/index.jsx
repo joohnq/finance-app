@@ -42,7 +42,7 @@ export function Home(){
         <div>
             <h1>Controle Financeiro</h1>
             <Painel income={income} expense={expense} total={total} />
-            <Form handleAdd={handleAdd}/>
+            <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionsList={setTransactionsList}/>
         </div>
     )
 }

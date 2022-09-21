@@ -77,7 +77,7 @@ export const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
 
         <button onClick={handleSave}>Adicionar</button>
       </form>
-      <Info />
+      <Info itens={transactionsList} setItens={setTransactionsList} />
     </div>
   );
 };
