@@ -2,6 +2,8 @@
 
 Project name is a `financial planning app` that allows ` you to view and take control of your finances` to do `you more aware and organized`.
 
+Based on no video: [https://www.youtube.com/watch?v=pj4vA67olbU]
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
