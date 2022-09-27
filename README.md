@@ -1,4 +1,4 @@
-# App Finance
+# Finance App
 
 Project name is a `financial planning app` that allows ` you to view and take control of your finances` to do `you more aware and organized`.
 
@@ -8,12 +8,12 @@ Based on no video: [https://www.youtube.com/watch?v=pj4vA67olbU]
 
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `(https://github.com/joohnq/app-finance)`
+* You have installed the latest version of `(https://github.com/joohnq/finance-app)`
 * You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
 
-## Installing App Finance
+## Installing Finance App
 
-To install App Finance, follow these steps:
+To install Finance App, follow these steps:
 
 Linux and macOS:
 ```
@@ -24,9 +24,9 @@ Windows:
 ```
 npm install
 ```
-## Using App Finance
+## Using Finance App
 
-To use App Finance, follow these steps:
+To use Finance App, follow these steps:
 
 ```
 npm run build
